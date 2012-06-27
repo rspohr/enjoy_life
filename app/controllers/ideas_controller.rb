@@ -33,6 +33,8 @@ class IdeasController < ApplicationController
   end
 
 	def random
+    #offset = rand(Idea.count)
+    #Idea.first(:offset => offset)
 		redirect_to Idea.all.shuffle.first
 	end
 
